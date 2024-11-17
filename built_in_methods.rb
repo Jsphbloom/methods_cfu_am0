@@ -7,19 +7,19 @@
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
 "Hello World".downcase
-
+# .downcase reads the string presented and downshifts all the letters to lowercase.
 
 "Hello World".include?("Hello")
-
+# This checks if "Hellow World" includes the phrase "Hello".
 
 "Hello World".end_with?("Hello")
-
+# This checks if "Hello World" ends with "Hello" (it does not).
 
 "Hello World".end_with?("rld")
-
+# This checks if "Hellow World" ends with "rld" (it does).
 
 12.even?
-
+# This boolean checks if the integer is even or not. If outputs "true" if even, and "false" if odd.
 
 18.next
 
@@ -30,6 +30,11 @@
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
+name = "Willy"
+music = "disco"
+
+puts name.downcase! # this downcases all characters.
+puts music.include?('dis') # this checks if 'dis' is included anywhere in the string.
 
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
@@ -46,11 +51,20 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
+age = 20
+height = 10
 
-
+puts age.odd? #this outputs a result of the .odd? method checking to see if age (20) is an odd number.
+puts height.abs #this returns the absolute value of the integer (10).
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+number_list = [1, 2, 3]
+name_list = ["billy", "bob", nil, "joe"]
+
+puts number_list.empty? #this will return true if the count of elements in the array is 0, which it is not.
+puts name_list.compact #this removes all nil values from the array.
